@@ -6,7 +6,7 @@ import pytesseract
 import google.generativeai as genai
 
 # ==== CONFIGURE GOOGLE GEMINI ====
-API_KEY = "enter your api key"  # <----- Replace with your actual API key
+API_KEY = "AIzaSyAgvhhDtV-Q6jAhCjTBBnYZy0Mzm649uQ8"  # <----- Replace with your actual API key
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
@@ -105,6 +105,7 @@ if uploaded_file:
 
     except Exception as e:
         st.error(f"Something went wrong: {e}")
+
 
 
 
